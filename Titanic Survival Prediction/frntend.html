@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Titanic Survival Prediction</h1>
+        <form id="prediction-form">
+            <label for="pclass">Passenger Class:</label>
+            <select id="pclass" name="pclass">
+                <option value="1">First Class</option>
+                <option value="2">Second Class</option>
+                <option value="3">Third Class</option>
+            </select>
+            <br><br>
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+            <br><br>
+            <label for="sibsp">Number of Siblings/Spouses:</label>
+            <input type="number" id="sibsp" name="sibsp">
+            <br><br>
+            <label for="parch">Number of Parents/Children:</label>
+            <input type="number" id="parch" name="parch">
+            <br><br>
+            <label for="fare">Fare:</label>
+            <input type="number" id="fare" name="fare">
+            <br><br>
+            <label for="embarked">Port of Embarkation:</label>
+            <select id="embarked" name="embarked">
+                <option value="S">Southampton</option>
+                <option value="C">Cherbourg</option>
+                <option value="Q">Queenstown</option>
+            </select>
+            <br><br>
+            <button id="predict-btn">Predict Survival</button>
+        </form>
+        <div id="prediction-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
